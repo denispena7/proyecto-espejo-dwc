@@ -112,8 +112,15 @@ formulario.addEventListener('submit', (event) => {
         inputTitulo.focus();
         return;
     }
-    
+
   // TODO: Crear un nuevo objeto tarea inmutable con un id único (Date.now())
+   const nuevaTarea = {
+        id: Date.now(),
+        titulo: titulo,
+        prioridad: prioridad,
+        completada: false
+    };
+    
   // TODO: Añadir el objeto al array global de tareas de forma inmutable (operador spread)
   // TODO: Volver a invocar pintarTareas() y resetear el formulario
 });
