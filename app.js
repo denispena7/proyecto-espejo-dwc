@@ -139,7 +139,9 @@ botonesFiltro.forEach(boton => {
     event.target.classList.add('active');
 
     // TODO: Actualizar la variable 'filtroActual' con el atributo 'data-filtro' del botón
+    filtroActual = event.target.getAttribute('data-filtro');
     // TODO: Invocar pintarTareas() para refrescar la pantalla
+    pintarTareas();
   });
 });
 
